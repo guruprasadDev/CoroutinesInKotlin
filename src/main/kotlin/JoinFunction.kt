@@ -1,3 +1,11 @@
+/**
+ * Launches a new coroutine without blocking the current thread
+ * Inherits the thread & coroutine scope of the immediate parent coroutine
+ * Returns a reference to the object
+ * Using job object you can cancel the coroutine or wait for coroutine to finish
+ */
+
+
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
