@@ -23,5 +23,5 @@ fun main()= runBlocking {//this : CoroutineScope
         delay(3000L) // non-blocking delay for 3 seconds
         print(" `Guru Prasad`") // these line prints after delay
     }
-    print("Hello, Iam ") // main coroutine continues while a previous one is delayed
+    print("Hello, Iam ") // main coroutine continues while a previous one is delayed or suspended
 }
