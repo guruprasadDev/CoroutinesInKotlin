@@ -1,4 +1,5 @@
 import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 fun main(){  //Executes in main thread
@@ -8,7 +9,7 @@ fun main(){  //Executes in main thread
     GlobalScope.launch { //Create a background coroutine that runs on a background thread
 
         println("Fake work starts :- ${Thread.currentThread().name}")
-        Thread.sleep(1000L)  // Pretend doing some work ... may be file upload
+        delay(1000)  // Pretend doing some work ... may be file upload
         println("Fake work ends :- ${Thread.currentThread().name}")
     }
 
